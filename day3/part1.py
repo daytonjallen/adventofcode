@@ -5,7 +5,7 @@ def calculate_power_consumption(diagnostics: list[str]) -> int:
     """Calculates the power consumption of the submarine.
 
     Args:
-        depths (List[int]): depth measurements
+        diagnostics (list[str]): list of diagnostic readings
 
     Returns:
         int: the power consumption of the submarine

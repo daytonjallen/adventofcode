@@ -1,7 +1,4 @@
-from typing import List, Tuple
-
-
-def calculatePosition(commands: List[Tuple[str, int]]) -> int:
+def calculate_position(commands: list[tuple[str, int]]) -> int:
     """Calculates submarines final position
 
     Args:
@@ -28,8 +25,8 @@ with open("./testcase.txt", "r") as test_file:
     lines = test_file.readlines()
     test_data = [
         (command, int(value))
-        for (command, value) in (line.split(" ") for line in lines)
+        for (command, value) in (line.strip().split(" ") for line in lines)
     ]
 
-result = calculatePosition(test_data)
+result = calculate_position(test_data)
 print(result)

@@ -5,7 +5,7 @@ def calculate_life_support_rating(diagnostics: list[str]) -> int:
     """Calculates the life support rating of the submarine.
 
     Args:
-        depths (List[int]): depth measurements
+        diagnostics (list[str]): list of diagnostic readings
 
     Returns:
         int: the life support rating of the submarine
