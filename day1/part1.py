@@ -1,7 +1,4 @@
-from typing import List
-
-
-def countDepthIncreases(depths: List[int]) -> int:
+def count_depth_increases(depths: list[int]) -> int:
     """Counts the number of times a depth measurement increases.
 
     Args:
@@ -25,7 +22,7 @@ def countDepthIncreases(depths: List[int]) -> int:
 
 with open("./testcase.txt", "r") as test_file:
     lines = test_file.readlines()
-    test_data = [int(line) for line in lines]
+    test_data = [int(line.strip()) for line in lines]
 
-result = countDepthIncreases(test_data)
+result = count_depth_increases(test_data)
 print(result)
